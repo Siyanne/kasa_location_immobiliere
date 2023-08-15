@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Accueil from "./Components/Accueil/Accueil.jsx";
+import Apropos from "./Components/Apropos/Apropos.jsx";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Accueil />} />
+          <Route path="/Apropos" element={<Apropos />} />
         </Routes>
       </div>
       <nav>
