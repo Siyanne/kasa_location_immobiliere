@@ -1,38 +1,13 @@
-import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import Router from "./Router.jsx";
 import "./App.css";
-import Accueil from "./Components/Accueil/Accueil.jsx";
-import Apropos from "./Components/Apropos/Apropos.jsx";
-
-function App() {
+import Navbar from "./Components/Navbar/Navbar.jsx";
+import DevNavBar from "./Components/Navbar/DevNavbar.jsx";
+export default function App() {
   return (
-    <>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Accueil />} />
-          <Route path="/Apropos" element={<Apropos />} />
-        </Routes>
-      </div>
-      <nav>
-        <a href="index.html">Accueil</a>
-        <a href="https://react.dev" target="_blank">
-          A propos
-        </a>
-      </nav>
-      <h1>Chez vous, partout et ailleurs</h1>
-      <template>
-        <div className="card">
-          <a href="#">
-            <img src="" alt="" />
-            <p>Edit</p>
-          </a>
-        </div>
-      </template>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="App">
+      <DevNavBar />
+      <Navbar />
+      <Router />
+    </div>
   );
 }
-
-export default App;

@@ -1,0 +1,16 @@
+.active {
+  background-color: #1d4ed8;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: brown;
+}
+
+nav ul li {
+  list-style: none;
+}
+nav ul li a:not(.active):hover {
+  background-color: blue;
+}

@@ -1,0 +1,7 @@
+.DevNavBar {
+  background-color: silver;
+  border: 1px solid red;
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+}
