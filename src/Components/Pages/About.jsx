@@ -1,24 +1,22 @@
 import React from "react";
-
+import { useState } from "react";
+//import {Collapse} from "react-collapse";
 const About = () => {
-  return (
-    <div>
+  const [isCollapsed, setIsCollapsed] = useState(false);
+
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+  };
+  {
+    isCollapsed ? (
       <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-        assumenda vel? Tempore vel rerum in repudiandae consectetur optio neque,
-        accusantium quae atque tenetur dicta nam nesciunt minus pariatur
-        doloremque! Velit natus, ducimus, maxime labore veritatis reiciendis,
-        ipsa id dolor beatae nisi accusamus modi animi quo distinctio aliquam.
-        Quia odit autem enim? Non distinctio molestias itaque ullam ducimus
-        fugiat ratione dolores ea sequi. Reiciendis, praesentium excepturi.
-        Ipsam iusto adipisci molestiae maiores. Molestias ex enim possimus
-        ullam, odio tempora ratione dolorem dolorum deserunt voluptatibus earum
-        porro molestiae! Veritatis perspiciatis ullam exercitationem
-        necessitatibus, sit eaque aut repellat dolorum labore, vero, mollitia
-        expedita illo?
+        Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les
+        années 1500, quand un imprimeur anonyme assembla ensemble des morceaux
+        de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas
+        fait que survivre cinq siècles
       </div>
-    </div>
-  );
+    ) : null;
+  }
 };
 
 export default About;
