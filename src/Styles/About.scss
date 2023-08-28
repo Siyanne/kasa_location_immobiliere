@@ -1,18 +1,8 @@
 .Collapse {
   &__title {
-    background-color: hsl(0deg 100% 68.82%);
-    color: #ffff;
     border-radius: 3px;
     margin-bottom: 20px;
     padding: 10px;
-  }
-  &__content {
-    background-color: #ffff;
-    color: hsl(0deg 100% 68.82%);
-    overflow: hidden;
-  }
-  &--closed &__content {
-    height: 0;
   }
   &--open {
     margin-bottom: 10px;
@@ -20,8 +10,13 @@
   &__arrow {
     color: black;
   }
-  width: 80%;
 
   border-radius: 3px;
   background-color: hsl(0deg 0% 90.2%);
+}
+
+.background {
+  mix-blend-mode: darken;
+
+  width: 335px;
 }

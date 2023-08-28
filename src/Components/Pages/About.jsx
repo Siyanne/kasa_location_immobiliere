@@ -3,11 +3,12 @@ import Collapse from "../Collapse.jsx";
 import logements from "../../../data.json";
 import "../../Styles/About.scss";
 import arrow_back_collapse from "../../assets/arrow_back__collapse.png";
-
+import imgKalen from "../../assets/kalen-emsley.png";
 Collapse;
 export default function About() {
   return (
     <>
+      <Box />
       <Collapse title="Fiabilité">
         <img
           src={arrow_back_collapse}
@@ -41,7 +42,11 @@ export default function About() {
     </>
   );
 }
-/**
- * j'écris la liste de "équiipements"
- * => SI Climatisations === Climatisation en faisant parcourir la liste => collapse ou nous emmène sur une page de logements à voir je ne sais pas l'action que ça fait
- */
+
+const Box = () => {
+  return (
+    <div className="box">
+      <img className="background" alt="Background" src={imgKalen} />
+    </div>
+  );
+};
