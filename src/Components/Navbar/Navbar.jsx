@@ -1,21 +1,21 @@
 import React from "react";
-import "./Navbar.css";
+import "./Navbar.scss";
 import { NavLink } from "react-router-dom";
 
 import About from "../Pages/About.jsx";
 import logo from "../../assets/logo.png";
 const Navbar = () => {
   return (
-    <nav className="menu">
+    <nav className="Navbar">
       <img src={logo} alt="logo Kasa" className="logo" />
-      <ul className="list-menu">
+      <ul className="Navbar__menu">
         <li>
-          <NavLink to="/" className="accueil">
+          <NavLink to="/" className="Navbar__link">
             Accueil
           </NavLink>
         </li>
         <li>
-          <NavLink to="/About" onClick={About} className="aPropos">
+          <NavLink to="/About" className="Navbar__link">
             A propos
           </NavLink>
         </li>

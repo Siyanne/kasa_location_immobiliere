@@ -1,22 +1,30 @@
 import React from "react";
-import { useState } from "react";
-//import {Collapse} from "react-collapse";
-const About = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+import Collapse from "../Collapse.jsx";
+import logements from "../../../data.json";
+import "./About.scss";
 
-  const toggleCollapse = () => {
-    setIsCollapsed(!isCollapsed);
-  };
-  {
-    isCollapsed ? (
-      <div>
-        Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les
-        années 1500, quand un imprimeur anonyme assembla ensemble des morceaux
-        de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas
-        fait que survivre cinq siècles
-      </div>
-    ) : null;
-  }
-};
-
-export default About;
+Collapse;
+export default function About() {
+  return (
+    <>
+      <Collapse title="Equipements">
+        <ul>
+          <li>Climatisation</li>
+          <li>Wi-Fi</li>
+          <li>Cuisine</li>
+          <li>Espace de travail</li>
+          <li>Fer à repasser</li>
+          <li>Sèche-cheveux</li>
+          <li>Cintres</li>
+        </ul>
+      </Collapse>
+      <Collapse title="bob">Alice2</Collapse>
+      <Collapse title="bob">Alice</Collapse>
+      <Collapse title="bob">Alice</Collapse>
+    </>
+  );
+}
+/**
+ * j'écris la liste de "équiipements"
+ * => SI Climatisations === Climatisation en faisant parcourir la liste => collapse ou nous emmène sur une page de logements à voir je ne sais pas l'action que ça fait
+ */

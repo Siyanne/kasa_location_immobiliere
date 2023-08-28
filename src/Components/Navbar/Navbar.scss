@@ -1,0 +1,18 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  &__link {
+    color: pink;
+  }
+  &__link.active,
+  &__link:hover {
+    background-color: #1d4ed8;
+  }
+}
