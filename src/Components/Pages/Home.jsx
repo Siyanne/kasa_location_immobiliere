@@ -1,7 +1,7 @@
 import React from "react";
 import logements from "../../../data.json";
 import DevDump from "../Navbar/DevDump.jsx";
-import "./Home.css";
+import "../../Styles/Home.css";
 function Home() {
   return (
     <div>

@@ -1,12 +1,11 @@
 import "./Footer.css";
-import logo from "../../assets/logo.png";
+import logo from "../../../assets/logo.png";
 lo;
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className="footer-layeOut">
       <img src={logo} alt="logo kasa" />
-      <p>defrfre</p>
+      <p>ⓒ 2020 Kasa. All rights reserved</p>
     </footer>
   );
-};
-export default Footer;
+}

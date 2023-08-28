@@ -1,26 +1,43 @@
 import React from "react";
 import Collapse from "../Collapse.jsx";
 import logements from "../../../data.json";
-import "./About.scss";
+import "../../Styles/About.scss";
+import arrow_back_collapse from "../../assets/arrow_back__collapse.png";
 
 Collapse;
 export default function About() {
   return (
     <>
-      <Collapse title="Equipements">
-        <ul>
-          <li>Climatisation</li>
-          <li>Wi-Fi</li>
-          <li>Cuisine</li>
-          <li>Espace de travail</li>
-          <li>Fer à repasser</li>
-          <li>Sèche-cheveux</li>
-          <li>Cintres</li>
-        </ul>
+      <Collapse title="Fiabilité">
+        <img
+          src={arrow_back_collapse}
+          alt="ouvrir et fermer le collapse"
+          className="Collapse__arrow"
+        />
+        <p>
+          Les annonces postées sur Kasa garantissent une fiabilité totale. Les
+          photos sont conformes aux logements et toutes les informations sont
+          régulièrement vérifiées par nos équipes.
+        </p>
       </Collapse>
-      <Collapse title="bob">Alice2</Collapse>
-      <Collapse title="bob">Alice</Collapse>
-      <Collapse title="bob">Alice</Collapse>
+      <Collapse title="Respect">
+        La bienvaillance fait partie des valeurs fondatrices de Kasa. Tout
+        comportement discriminatoireou de pertubation du voisinage entrainera
+        une exclusion de notre plateforme.
+      </Collapse>
+      <Collapse title="Service">
+        La bienvaillance fait partie des valeurs fondatrices de Kasa. Tout
+        comportement discriminatoireou de pertubation du voisinage entrainera
+        une exclusion de notre plateforme.
+      </Collapse>
+      <Collapse title="Sécurité">
+        La sécurité est la priorité de Kasa. Aussi bien pour notre hôtes que
+        pour les voyageurs, chaque logement correspond aux critères de sécurité
+        établis par nos services. En laissant une note aussi bien à l'hôte qu'au
+        locataire, cela permet à nos équipes de vérifier que les standards sont
+        bien respectés. Nous organisons également des ateliers sur la sécurité
+        domestique pour nos hôtes.
+      </Collapse>
     </>
   );
 }

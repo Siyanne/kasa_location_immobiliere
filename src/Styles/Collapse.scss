@@ -1,0 +1,14 @@
+.Collapse {
+  &__title {
+    background-color: hsl(0deg 100% 68.82%);
+    color: #ffff;
+  }
+  &__content {
+    background-color: #ffff;
+    color: hsl(0deg 100% 68.82%);
+    overflow: hidden;
+  }
+  &--closed &__content {
+    height: 0;
+  }
+}
