@@ -1,8 +1,8 @@
 import React from "react";
-import logements from "../../../data.json";
-import DevDump from "../Navbar/DevDump.jsx";
-import "../../Styles/Home.css";
-function Home() {
+import logements from "../../data.json";
+import DevDump from "../Components/DevDump.jsx";
+import "./Home.css";
+export default function Home() {
   return (
     <div>
       <div>
@@ -24,5 +24,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

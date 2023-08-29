@@ -1,0 +1,12 @@
+.Carrousel {
+  &__slide {
+    width: 0%;
+    transition: width 1s ease;
+    &.is--Active {
+      width: 10%;
+    }
+  }
+  &__slides {
+    display: flex;
+  }
+}

@@ -1,9 +1,9 @@
-import "./Footer.css";
-import logo from "../../assets/logo.png";
+import "./Footer.scss";
+import logo from "../assets/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="footer-layeOut">
+    <footer className="Footer">
       <img src={logo} alt="logo kasa" />
       <p>ⓒ 2020 Kasa. All rights reserved</p>
     </footer>

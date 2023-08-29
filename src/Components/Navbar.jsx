@@ -1,9 +1,8 @@
 import React from "react";
-import "../../Styles/Navbar.scss";
+import "./Navbar.scss";
 import { NavLink } from "react-router-dom";
 
-import About from "../Pages/About.jsx";
-import logo from "../../assets/logo.png";
+import logo from "../assets/logo.png";
 const Navbar = () => {
   return (
     <nav className="Navbar">
