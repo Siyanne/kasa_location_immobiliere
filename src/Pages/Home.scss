@@ -1,0 +1,15 @@
+.Logements {
+  &__cover {
+    width: 175px;
+    height: 180px;
+  }
+  &__figure {
+    max-width: 100%;
+    width: 180px;
+
+    border: 1px solid black;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}

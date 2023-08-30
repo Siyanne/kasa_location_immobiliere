@@ -9,10 +9,15 @@
     gap: 20px;
   }
   &__link {
-    color: pink;
+    color: #ff6060;
+    text-decoration: none;
   }
   &__link.active,
   &__link:hover {
     background-color: #1d4ed8;
+  }
+  &__logo {
+    width: 145px;
+    position: relative;
   }
 }

@@ -27,8 +27,8 @@ export default function Logement() {
             </div>
           </div>
           <div>
-            <img src={logement.picture} alt="photo de l'host" />
-            <p>{logement.name}</p>
+            <img src={logement.host.picture} alt="photo de l'host" />
+            <p>{logement.host.name}</p>
 
             <div>
               <Stars />
