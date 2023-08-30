@@ -12,9 +12,9 @@ export default function Logement() {
   const logement = logements.find((logement) => logement.id === id);
   return (
     <>
-      <div>
+      {/*<div>
         Logement <DevDump val={logement} />{" "}
-      </div>
+  </div>*/}
       <div className="logements">
         <Carrousel images={logement.pictures} />
 

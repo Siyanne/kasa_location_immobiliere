@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./Carrousel.scss";
-
 export default function Carrousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 

@@ -11,13 +11,16 @@
   &__link {
     color: #ff6060;
     text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
   }
   &__link.active,
   &__link:hover {
-    background-color: #1d4ed8;
+    text-decoration: underline;
   }
   &__logo {
-    width: 145px;
+    width: 115px;
+    height: 46px;
     position: relative;
   }
 }
