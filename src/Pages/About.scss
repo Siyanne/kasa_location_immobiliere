@@ -10,14 +10,38 @@
   &__arrow {
     color: black;
   }
+  &__content {
+    background-color: #fff;
+    color: black;
+  }
+  &__bienvaillance {
+    background-color: hsl(0deg 0% 90.2%);
+  }
 
   border-radius: 3px;
 }
-.bienvaillance {
-  background-color: hsl(0deg 0% 90.2%);
-}
+
 .background {
   mix-blend-mode: darken;
+  border-radius: 10px;
+  width: 100%;
+  background-size: cover;
+  height: 111px;
+  margin: 20px 0px;
+}
+.promesse {
+  display: flex;
+  flex-direction: column;
 
-  width: 335px;
+  color: black;
+}
+@media screen and (min-width: 1024px) {
+  .Collapse {
+    &__group {
+      margin: 0px 50px;
+    }
+  }
+  .background {
+    height: 223px;
+  }
 }

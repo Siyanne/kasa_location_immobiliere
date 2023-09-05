@@ -1,12 +1,26 @@
 .Carrousel {
   &__slide {
     width: 0%;
+    position: relative;
     transition: width 1s ease;
+
     &.is--Active {
-      width: 10%;
+      width: 100%;
+      border-radius: 10px;
     }
   }
   &__slides {
     display: flex;
+  }
+  &__arrow_backward {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+  &__arrow_forward {
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    transform: translateY(-50%);
   }
 }

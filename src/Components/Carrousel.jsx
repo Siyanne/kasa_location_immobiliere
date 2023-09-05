@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Carrousel.scss";
+import arrow_backward from "../../public/arrow_backward.png";
+import arrow_forward from "../../public/arrow_forward.png";
 export default function Carrousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -15,7 +17,12 @@ export default function Carrousel({ images }) {
 
   return (
     <div className="Carrousel">
-      <button onClick={goToPrevSlide}>Précédent</button>
+      <button className="Carrousel__arrow_backward" onClick={goToPrevSlide}>
+        <img src={arrow_backward} alt="flèche précédente" />{" "}
+      </button>
+      <button className="Carrousel__arrow_forward" onClick={goToNextSlide}>
+        <img src={arrow_forward} alt="flèche précédente" />{" "}
+      </button>
       <div className="Carrousel__slides">
         {images.map((image, index) => (
           <img
@@ -27,7 +34,6 @@ export default function Carrousel({ images }) {
           />
         ))}
       </div>
-      <button onClick={goToNextSlide}>Suivant</button>
     </div>
   );
 }

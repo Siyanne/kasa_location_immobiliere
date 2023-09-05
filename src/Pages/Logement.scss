@@ -1,0 +1,41 @@
+.Logements {
+  color: hsl(0, 100%, 68.82%);
+  &__host {
+    border-radius: 50%;
+    width: 32px;
+  }
+  &__host_info {
+    display: flex;
+    justify-content: right;
+    justify-content: space-between;
+  }
+  &__profil {
+    display: flex;
+    flex-direction: row;
+  }
+  &__tags_container {
+    background-color: blueviolet;
+  }
+  &__tag {
+    color: #fff;
+    background-color: #ff6060;
+    border-radius: 10px;
+    min-height: 25px;
+    flex-basis: 40%;
+    flex-grow: 1;
+  }
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px;
+    margin: 10px 0px;
+    font-size: 14px;
+  }
+  &__title_housing {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    min-height: 46px;
+  }
+}

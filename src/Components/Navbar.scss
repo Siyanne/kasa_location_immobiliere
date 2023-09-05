@@ -24,3 +24,11 @@
     position: relative;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .Navbar {
+    &__link {
+      font-size: 24px;
+      text-transform: lowercase;
+    }
+  }
+}
