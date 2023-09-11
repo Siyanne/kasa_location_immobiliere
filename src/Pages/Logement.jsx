@@ -6,7 +6,7 @@ import Collapse from "../Components/Collapse.jsx";
 import Carrousel from "../Components/Carrousel.jsx";
 import Rating from "../Components/Rating.jsx";
 import "./Logement.scss";
-
+import Columns from "../Components/Columns.jsx";
 export default function Logement() {
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === id);
@@ -47,14 +47,17 @@ export default function Logement() {
             </div>
           </div>
           <div className="Collapse__container">
-            <Collapse title="Description">{logement.description}</Collapse>
-            <Collapse title="Equipements">
-              <ul>
-                {logement.equipments.map((equipment, index) => (
-                  <li key={index}>{equipment}</li>
-                ))}
-              </ul>
-            </Collapse>
+            <Columns>
+              <Collapse title="Description">{logement.description}</Collapse>
+
+              <Collapse title="Equipements">
+                <ul>
+                  {logement.equipments.map((equipment, index) => (
+                    <li key={index}>{equipment}</li>
+                  ))}
+                </ul>
+              </Collapse>
+            </Columns>
           </div>
         </div>
       </div>

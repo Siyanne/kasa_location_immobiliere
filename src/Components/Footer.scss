@@ -8,27 +8,25 @@
   font-weight: 500;
   font-size: 12px;
   padding: 65px;
+  @media screen and (min-width: 1024px) {
+    font-weight: 500;
+    font-size: 24px;
+    padding: 25px;
+  }
   &__logo {
     width: 130px;
     color: #fff;
     filter: brightness(0) invert(1);
+    @media screen and (min-width: 1024px) {
+      margin: 30px;
+    }
   }
   &__rights {
     margin: 13px 13px 0px;
     text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .Footer {
-    font-weight: 500;
-    font-size: 24px;
-    padding: 25px;
-    &__rights {
+    @media screen and (min-width: 1024px) {
       margin: 0px;
       text-align: center;
-    }
-    &__logo {
-      margin: 30px;
     }
   }
 }

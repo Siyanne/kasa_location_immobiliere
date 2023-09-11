@@ -21,27 +21,17 @@
   border-radius: 3px;
 }
 
-.background {
-  mix-blend-mode: darken;
-  border-radius: 10px;
-  width: 100%;
-  object-fit: cover;
-  height: 111px;
-  margin: 20px 0px;
-}
 .promesse {
   display: flex;
   flex-direction: column;
 
   color: black;
 }
-@media screen and (min-width: 1024px) {
-  .Collapse {
-    &__group {
+
+.About {
+  @media screen and (min-width: 1024px) {
+    &__Collapses {
       margin: 0px 50px;
     }
-  }
-  .background {
-    height: 223px;
   }
 }

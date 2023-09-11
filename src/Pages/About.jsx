@@ -3,15 +3,14 @@ import Collapse from "../Components/Collapse.jsx";
 import logements from "../../data.json";
 import "./About.scss";
 import imgKalen from "../assets/kalen-emsley.png";
+import Banner from "../Components/Banner.jsx";
 
 export default function About() {
   return (
     <>
       <div className="promesse">
-        <div className="Background">
-          <img className="background" alt="Background" src={imgKalen} />
-        </div>
-        <div className="Collapse__group">
+        <Banner url={imgKalen} />
+        <div className="About__collapses">
           <Collapse title="Fiabilité">
             <p className="Collapse__bienvaillance">
               Les annonces postées sur Kasa garantissent une fiabilité totale.

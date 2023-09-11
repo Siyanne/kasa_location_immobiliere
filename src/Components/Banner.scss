@@ -1,0 +1,17 @@
+.Banner {
+  &--context-About &__img {
+  }
+  &--context-Home {
+  }
+  &__img {
+    mix-blend-mode: darken;
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+    height: 111px;
+    margin: 20px 0px;
+    @media screen and (min-width: 1024px) {
+      height: 223px;
+    }
+  }
+}
