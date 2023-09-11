@@ -1,5 +1,5 @@
 import Router from "./Router.jsx";
-import "./App.css";
+import "./App.scss";
 import Navbar from "./Components/Navbar.jsx";
 import DevNavBar from "./Components/DevNavbar.jsx";
 import Footer from "./Components/Footer.jsx";
@@ -7,7 +7,7 @@ import Footer from "./Components/Footer.jsx";
 export default function App() {
   return (
     <div className="App">
-      {/*<DevNavBar />*/}
+      <DevNavBar />
       <Navbar />
       <Router />
       <Footer />

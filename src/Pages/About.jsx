@@ -2,7 +2,6 @@ import React from "react";
 import Collapse from "../Components/Collapse.jsx";
 import logements from "../../data.json";
 import "./About.scss";
-import arrow_back_collapse from "../assets/arrow_back__collapse.png";
 import imgKalen from "../assets/kalen-emsley.png";
 
 export default function About() {
@@ -14,11 +13,6 @@ export default function About() {
         </div>
         <div className="Collapse__group">
           <Collapse title="Fiabilité">
-            <img
-              src={arrow_back_collapse}
-              alt="ouvrir et fermer le collapse"
-              className="Collapse__arrow"
-            />
             <p className="Collapse__bienvaillance">
               Les annonces postées sur Kasa garantissent une fiabilité totale.
               Les photos sont conformes aux logements et toutes les informations

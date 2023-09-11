@@ -1,22 +1,12 @@
-import React, { useState } from "react";
-import Stars from "./Stars.jsx";
+import "../../data.json";
+import Star from "../../public/star_img.png";
+import "./Rating.scss";
+export default function Rating({ rating }) {
+  const stars = [];
 
-export default function Rating() {
-  const [rating, setRating] = useState(0);
+  for (let i = 0; i < rating; i++) {
+    stars.push(<img key={i} src={Star} className="Star" />);
+  }
 
-  const handleClick = (selectedStar) => {
-    setRating(selectedStar + 1);
-  };
-
-  return (
-    <>
-      {[...Array(5)].map((_, index) => (
-        <Stars
-          key={index}
-          selected={index < rating}
-          onClick={() => handleClick(index)}
-        />
-      ))}
-    </>
-  );
+  return <div className="rating">{stars}</div>;
 }

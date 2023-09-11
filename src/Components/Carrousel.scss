@@ -1,7 +1,7 @@
 .Carrousel {
+  position: relative;
   &__slide {
     width: 0%;
-    position: relative;
     transition: width 1s ease;
 
     &.is--Active {
@@ -14,13 +14,16 @@
   }
   &__arrow_backward {
     position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
+    top: 50%;
+    background-color: red;
   }
   &__arrow_forward {
     position: absolute;
-    top: 40%;
-    right: 20px;
-    transform: translateY(-50%);
+    top: 50%;
+    right: 0%;
+    background-color: red;
+  }
+  .is--Hidden {
+    display: none;
   }
 }

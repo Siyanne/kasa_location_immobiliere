@@ -2,6 +2,8 @@
   &__title {
     background-color: hsl(0deg 100% 68.82%);
     color: #ffff;
+    display: flex;
+    justify-content: space-between;
   }
   &__content {
     background-color: #ffff;
@@ -10,5 +12,13 @@
   }
   &--closed &__content {
     height: 0;
+  }
+}
+.arrow {
+  width: 20px;
+
+  transition: transform 0.5s;
+  &--rotate {
+    transform: rotate(180deg);
   }
 }

@@ -4,13 +4,13 @@ import DevDump from "../Components/DevDump.jsx";
 import section from "../assets/section.png";
 import "./Home.scss";
 export default function Home() {
-  const housingSlice = Array.from(logements).slice(0, 8);
+  const housingSlice = Array.from(logements).slice(0, 6);
   return (
     <>
       <div className="img_home_div">
-        <img className="img_home" alt="mer rocheuse" src={section} />
+        <img className="Home__img" alt="mer rocheuse" src={section} />
       </div>
-      <div className="logements--container">
+      <div className="Logements__container">
         {/* <div>
           Home
            <DevDump val={logements} />
