@@ -6,7 +6,9 @@ export default function Error404() {
     <div className="Error">
       <img className="Error__img" src={img404} alt="image d'erreur 404" />
       <p>Oups! La page demandez n'existe pas.</p>
-      <a href="/">Retourner sur la page d'accueil</a>
+      <a href="/" className="Error__link">
+        Retourner sur la page d'accueil
+      </a>
     </div>
   );
 }

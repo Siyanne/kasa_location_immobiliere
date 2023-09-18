@@ -3,6 +3,11 @@
   &__slide {
     width: 0%;
     transition: width 1s ease;
+    object-fit: cover;
+    height: 255px;
+    @media screen and (min-width: 1024px) {
+      height: 530px;
+    }
 
     &.is--Active {
       width: 100%;
@@ -12,16 +17,23 @@
   &__slides {
     display: flex;
   }
-  &__arrow_backward {
-    position: absolute;
-    top: 50%;
-    background-color: red;
-  }
+  &__arrow_backward,
   &__arrow_forward {
     position: absolute;
     top: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+  }
+  &__arrow_forward {
     right: 0%;
-    background-color: red;
+  }
+  &__arrow_backward_img,
+  &__arrow_forward_img {
+    filter: brightness(100%);
+    object-fit: contain;
+    @media screen and (min-width: 1024px) {
+      width: 60px;
+    }
   }
   .is--Hidden {
     display: none;

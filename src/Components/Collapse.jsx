@@ -18,7 +18,9 @@ export default function Collapse({ title, children }) {
         <div onClick={toggleOpen} className="Collapse__title">
           {title}
           <img
-            className={`arrow ${rotate ? "arrow--rotate" : ""}`}
+            className={`Collapse__arrow ${
+              rotate ? "Collapse__arrow--rotate" : ""
+            }`}
             src={arrow_upward}
             alt="flèche haut"
           />

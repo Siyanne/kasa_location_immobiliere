@@ -12,6 +12,6 @@ html {
 }
 @media screen and (min-width: 1024px) {
   html {
-    margin: 40px 70px;
+    margin: 40px 70px 0px;
   }
 }

@@ -2,6 +2,7 @@
   &--context-About &__img {
   }
   &--context-Home {
+    position: relative;
   }
   &__img {
     mix-blend-mode: darken;
@@ -10,8 +11,26 @@
     object-fit: cover;
     height: 111px;
     margin: 20px 0px;
+
     @media screen and (min-width: 1024px) {
       height: 223px;
+      margin: 40px 0px;
+    }
+  }
+  &__title {
+    color: #fff;
+    position: absolute;
+    top: 110px;
+    padding: 15px;
+
+    font-family: "Montserrat-Medium", Helvetica;
+    font-size: 24px;
+    font-weight: 500;
+    height: 68px;
+    @media screen and (min-width: 1024px) {
+      font-size: 48px;
+      left: 35%;
+      top: 23%;
     }
   }
 }

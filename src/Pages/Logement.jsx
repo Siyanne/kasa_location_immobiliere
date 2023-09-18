@@ -34,7 +34,7 @@ export default function Logement() {
             </div>
             <div className="Logements__host_info">
               <div className="Logements__rating">
-                <Rating rating={parseInt(logement.rating, 10)} />
+                <Rating rating={logement.rating} />
               </div>
               <div className="Logements__profil">
                 <p>{logement.host.name}</p>

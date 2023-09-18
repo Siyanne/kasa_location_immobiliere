@@ -23,7 +23,11 @@ export default function Carrousel({ images }) {
         }`}
         onClick={goToPrevSlide}
       >
-        <img src={arrow_backward} alt="flèche précédente" />{" "}
+        <img
+          src={arrow_backward}
+          alt="flèche précédente"
+          className="Carrousel__arrow_backward_img"
+        />{" "}
       </button>
       <button
         className={`Carrousel__arrow_forward ${
@@ -31,7 +35,11 @@ export default function Carrousel({ images }) {
         }`}
         onClick={goToNextSlide}
       >
-        <img src={arrow_forward} alt="flèche suivante" />{" "}
+        <img
+          src={arrow_forward}
+          alt="flèche suivante"
+          className="Carrousel__arrow_forward_img"
+        />{" "}
       </button>
       <div className="Carrousel__slides">
         {images.map((image, index) => (
@@ -41,6 +49,7 @@ export default function Carrousel({ images }) {
             }`}
             src={image}
             alt="image de logement"
+            key={index}
           />
         ))}
       </div>

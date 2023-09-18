@@ -14,9 +14,7 @@
       padding: 0px 158px;
     }
   }
-}
-@media screen and (min-width: 1024px) {
-  html {
-    margin: 0px 70px;
+  &__link {
+    color: hsl(0deg 100% 68.82%);
   }
 }
