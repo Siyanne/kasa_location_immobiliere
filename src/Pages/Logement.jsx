@@ -16,30 +16,30 @@ export default function Logement() {
       {/*<div>
         Logement <DevDump val={logement} />{" "}
   </div>*/}
-      <div className="Logements">
+      <div className="Logement">
         <Carrousel images={logement.pictures} />
 
         <div>
-          <div className="Logements__tags_info_container">
-            <div className="Logements__tags_container">
-              <h1 className="Logements__title_housing">{logement.title}</h1>
-              <p className="Logements__location">{logement.location}</p>
-              <div className="Logements__tags">
+          <div className="Logement__tags_info_container">
+            <div className="Logement__tags_container">
+              <h1 className="Logement__title_housing">{logement.title}</h1>
+              <p className="Logement__location">{logement.location}</p>
+              <div className="Logement__tags">
                 {logement.tags.map((tag, index) => (
-                  <a href="#" className="Logements__tag " key={index}>
+                  <a href="#" className="Logement__tag " key={index}>
                     {tag}
                   </a>
                 ))}
               </div>
             </div>
-            <div className="Logements__host_info">
-              <div className="Logements__rating">
+            <div className="Logement__host_info">
+              <div className="Logement__rating">
                 <Rating rating={logement.rating} />
               </div>
-              <div className="Logements__profil">
-                <p>{logement.host.name}</p>
+              <div className="Logement__profil">
+                <p className="Logement__host_name">{logement.host.name}</p>
                 <img
-                  className="Logements__host"
+                  className="Logement__host"
                   src={logement.host.picture}
                   alt="photo de l'host"
                 />

@@ -4,8 +4,27 @@
   &--context-Home {
     position: relative;
   }
+  &--txt {
+    color: #fff;
+    position: absolute;
+    bottom: 35%;
+    left: 0;
+    right: 0;
+    padding: 20px 10px;
+    width: 73%;
+    font-family: "Montserrat-Medium", Helvetica;
+    font-size: 24px;
+    font-weight: 500;
+    height: 68px;
+    @media screen and (min-width: 1024px) {
+      font-size: 48px;
+      bottom: 40%;
+      text-align: center;
+      width: 100%;
+    }
+  }
   &__img {
-    mix-blend-mode: darken;
+    filter: brightness(80%);
     border-radius: 10px;
     width: 100%;
     object-fit: cover;
@@ -15,22 +34,6 @@
     @media screen and (min-width: 1024px) {
       height: 223px;
       margin: 40px 0px;
-    }
-  }
-  &__title {
-    color: #fff;
-    position: absolute;
-    top: 110px;
-    padding: 15px;
-
-    font-family: "Montserrat-Medium", Helvetica;
-    font-size: 24px;
-    font-weight: 500;
-    height: 68px;
-    @media screen and (min-width: 1024px) {
-      font-size: 48px;
-      left: 20%;
-      top: 23%;
     }
   }
 }
