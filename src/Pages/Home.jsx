@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Banner url={home_banner} />
-      <p className="Banner__title">Chez vous, partout ailleurs</p>
+      <p className="Banner__title">Chez vous, partout et ailleurs</p>
       <div className="Logements__Home_container">
         {/* <div>
           Home
