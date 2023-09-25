@@ -6,9 +6,9 @@ export default function DevNavbar() {
     <div className="DevNavBar">
       <NavLink to="/">/</NavLink>
       <NavLink to="/About">/About</NavLink>
-      <NavLink to="/Logement/aaa">/Logement/aaa</NavLink>
       <NavLink to="/Logement/b9123946">/Logement/b9123946</NavLink>
       <NavLink to="/Logement">/Logement</NavLink>
+      <NavLink to="/Logement/aaa">/Logement/aaa</NavLink>
       <NavLink to="/zzzz">/zzzz</NavLink>
     </div>
   );

@@ -1,5 +1,7 @@
 .Collapse {
   border-radius: 3px;
+  background-color: #f7f7f7;
+  margin-bottom: 20px;
   &__title {
     background-color: hsl(0deg 100% 68.82%);
     color: #ffff;
@@ -8,36 +10,31 @@
     border-radius: 3px;
     padding: 10px;
   }
+  &__wrapper {
+    overflow: hidden;
+    max-height: var(--height);
+    transition: max-height 0.3s linear;
+  }
+  &--closed &__wrapper {
+    max-height: 0px;
+  }
   &__content {
-    background-color: #f7f7f7;
-    margin: 20px 10px;
     color: hsl(0deg 100% 68.82%);
     overflow: hidden;
+    padding: 15px;
   }
-  &--closed &__content {
-    height: 0;
-    margin: 20px;
-    @media screen and (min-width: 1024px) {
-      margin: 30px;
-    }
-  }
-  &--open {
-    margin-bottom: 10px;
-    background-color: #f7f7f7;
-  }
+
   &__About_Collapses {
     @media screen and (min-width: 1024px) {
       margin: 0px 70px;
     }
   }
-  &__bienvaillance {
-    padding: 0px 0px 20px;
-  }
+
   &__arrow {
     width: 20px;
     transition: transform 0.5s;
-    &--rotate {
-      transform: rotate(180deg);
-    }
+  }
+  &--open &__arrow {
+    transform: rotate(-180deg);
   }
 }

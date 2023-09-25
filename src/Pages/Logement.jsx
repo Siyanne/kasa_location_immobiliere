@@ -7,9 +7,12 @@ import Carrousel from "../Components/Carrousel.jsx";
 import Rating from "../Components/Rating.jsx";
 import "./Logement.scss";
 import Columns from "../Components/Columns.jsx";
+import Error404 from "./Error404.jsx";
 export default function Logement() {
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === id);
+  if (!logement) return <Error404 />;
+  console.log(logement);
 
   return (
     <>
@@ -26,9 +29,9 @@ export default function Logement() {
               <p className="Logement__location">{logement.location}</p>
               <div className="Logement__tags">
                 {logement.tags.map((tag, index) => (
-                  <a href="#" className="Logement__tag " key={index}>
+                  <span className="Logement__tag" key={index}>
                     {tag}
-                  </a>
+                  </span>
                 ))}
               </div>
             </div>
