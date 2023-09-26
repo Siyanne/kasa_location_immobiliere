@@ -12,8 +12,12 @@
   }
   &__wrapper {
     overflow: hidden;
-    max-height: var(--height);
+
     transition: max-height 0.3s linear;
+  }
+  &--open &__wrapper {
+    max-height: var(--height);
+    overflow: hidden;
   }
   &--closed &__wrapper {
     max-height: 0px;

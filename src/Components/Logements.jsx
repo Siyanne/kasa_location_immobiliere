@@ -5,11 +5,6 @@ export function Logements({ housingSlice }) {
   const link = "";
   return (
     <div className="Logements__Home_container">
-      {/* <div>
-          Home
-           <DevDump val={logements} />
-        </div>*/}
-
       <div className="Logements">
         {housingSlice.map((item) => (
           <Link

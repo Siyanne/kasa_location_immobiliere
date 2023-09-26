@@ -1,7 +1,5 @@
 import React from "react";
 import Collapse from "../Components/Collapse.jsx";
-import logements from "../../data.json";
-import "./About.scss";
 import imgKalen from "../assets/kalen-emsley.png";
 import Banner from "../Components/Banner.jsx";
 import "../Components/Collapse.scss";

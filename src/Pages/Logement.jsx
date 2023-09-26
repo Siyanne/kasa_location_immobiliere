@@ -1,7 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import logements from "../../data.json";
-import DevDump from "../Components/DevDump.jsx";
 import Collapse from "../Components/Collapse.jsx";
 import Carrousel from "../Components/Carrousel.jsx";
 import Rating from "../Components/Rating.jsx";
