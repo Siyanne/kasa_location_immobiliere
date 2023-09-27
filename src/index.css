@@ -4,11 +4,3 @@
   margin: 0;
   font-family: "Montserrat-Medium", Helvetica;
 }
-html {
-  margin: 20px;
-}
-@media screen and (min-width: 1024px) {
-  html {
-    margin: 40px 70px 0px;
-  }
-}

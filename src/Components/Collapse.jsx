@@ -19,21 +19,24 @@ export default function Collapse({ title, children }) {
 
   return (
     <>
-      <div
-        className={`Collapse ${open ? "Collapse--open" : "Collapse--closed"}`}
-        style={{ "--height": height }}
-      >
-        <div onClick={toggleOpen} className="Collapse__title">
-          {title}
-          <img
-            className={`Collapse__arrow `}
-            src={arrow_upward}
-            alt="flèche haut"
-          />
-        </div>
-        <div className="Collapse__wrapper">
-          <div className="Collapse__content" ref={contentRef}>
-            {children}
+      <div>
+        <div
+          className={`Collapse ${open ? "Collapse--open" : "Collapse--closed"}`}
+          style={{ "--height": height }}
+        >
+          <div className="Collapse__title">
+            {title}
+            <img
+              className={`Collapse__arrow `}
+              src={arrow_upward}
+              alt="flèche haut"
+              onClick={toggleOpen}
+            />
+          </div>
+          <div className="Collapse__wrapper">
+            <div className="Collapse__content" ref={contentRef}>
+              {children}
+            </div>
           </div>
         </div>
       </div>

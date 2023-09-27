@@ -1,6 +1,7 @@
 .Columns {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 
   & > * {
     flex-basis: 10%;
@@ -9,5 +10,6 @@
   @media screen and (min-width: 1024px) {
     flex-direction: row;
     gap: 20px;
+    align-items: flex-start;
   }
 }

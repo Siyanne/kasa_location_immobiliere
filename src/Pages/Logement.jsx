@@ -21,7 +21,7 @@ export default function Logement() {
       <div className="Logement">
         <Carrousel images={logement.pictures} />
 
-        <div>
+        <div className="Logement__info_collapse_container">
           <div className="Logement__tags_info_container">
             <div className="Logement__tags_container">
               <h1 className="Logement__title_housing">{logement.title}</h1>
@@ -48,19 +48,18 @@ export default function Logement() {
               </div>
             </div>
           </div>
-          <div className="Collapse__container">
-            <Columns>
-              <Collapse title="Description">{logement.description}</Collapse>
 
-              <Collapse title="Equipements">
-                <ul>
-                  {logement.equipments.map((equipment, index) => (
-                    <li key={index}>{equipment}</li>
-                  ))}
-                </ul>
-              </Collapse>
-            </Columns>
-          </div>
+          <Columns>
+            <Collapse title="Description">{logement.description}</Collapse>
+
+            <Collapse title="Equipements">
+              <ul className="Collapse__equipement_liste">
+                {logement.equipments.map((equipment, index) => (
+                  <li key={index}>{equipment}</li>
+                ))}
+              </ul>
+            </Collapse>
+          </Columns>
         </div>
       </div>
     </>

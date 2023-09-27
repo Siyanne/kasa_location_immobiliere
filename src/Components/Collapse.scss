@@ -1,7 +1,7 @@
 .Collapse {
   border-radius: 3px;
   background-color: #f7f7f7;
-  margin-bottom: 20px;
+
   &__title {
     background-color: hsl(0deg 100% 68.82%);
     color: #ffff;
@@ -25,12 +25,17 @@
   &__content {
     color: hsl(0deg 100% 68.82%);
     overflow: hidden;
-    padding: 15px;
+    padding: 20px;
   }
 
-  &__About_Collapses {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
     @media screen and (min-width: 1024px) {
       margin: 0px 70px;
+      gap: 30px;
     }
   }
 
@@ -40,5 +45,8 @@
   }
   &--open &__arrow {
     transform: rotate(-180deg);
+  }
+  &__equipement_liste {
+    list-style: none;
   }
 }

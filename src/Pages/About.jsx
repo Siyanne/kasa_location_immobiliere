@@ -6,9 +6,9 @@ import "../Components/Collapse.scss";
 export default function About() {
   return (
     <>
-      <div className="promesse">
+      <div>
         <Banner url={imgKalen} />
-        <div className="Collapse__About_Collapses">
+        <div className="Collapse__container">
           <Collapse title="Fiabilité">
             <p className="Collapse__bienvaillance">
               Les annonces postées sur Kasa garantissent une fiabilité totale.
@@ -17,21 +17,21 @@ export default function About() {
             </p>
           </Collapse>
           <Collapse title="Respect">
-            <p className="Collapse__bienvaillance">
+            <p>
               La bienvaillance fait partie des valeurs fondatrices de Kasa. Tout
               comportement discriminatoire ou de pertubation du voisinage
               entrainera une exclusion de notre plateforme.
             </p>
           </Collapse>
           <Collapse title="Service">
-            <p className="Collapse__bienvaillance">
+            <p>
               La bienvaillance fait partie des valeurs fondatrices de Kasa. Tout
               comportement discriminatoire ou de pertubation du voisinage
               entrainera une exclusion de notre plateforme.
             </p>
           </Collapse>
           <Collapse title="Sécurité">
-            <p className="Collapse__bienvaillance">
+            <p>
               La sécurité est la priorité de Kasa. Aussi bien pour notre hôtes
               que pour les voyageurs, chaque logement correspond aux critères de
               sécurité établis par nos services. En laissant une note aussi bien

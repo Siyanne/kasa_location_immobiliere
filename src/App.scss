@@ -8,4 +8,11 @@
     content: "";
     flex-grow: 1;
   }
+  &__general_margin {
+    margin: 20px;
+
+    @media screen and (min-width: 1024px) {
+      margin: 40px 70px 0px;
+    }
+  }
 }

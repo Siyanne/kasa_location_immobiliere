@@ -17,30 +17,22 @@ export default function Carrousel({ images }) {
 
   return (
     <div className="Carrousel">
-      <button
-        className={`Carrousel__arrow_backward ${
+      <img
+        className={`Carrousel__arrow_backward_img Carrousel__arrow_backward ${
           currentIndex === 0 ? "is--Hidden" : ""
         }`}
         onClick={goToPrevSlide}
-      >
-        <img
-          src={arrow_backward}
-          alt="flèche précédente"
-          className="Carrousel__arrow_backward_img"
-        />{" "}
-      </button>
-      <button
-        className={`Carrousel__arrow_forward ${
+        src={arrow_backward}
+        alt="flèche précédente"
+      />{" "}
+      <img
+        src={arrow_forward}
+        alt="flèche suivante"
+        className={`Carrousel__arrow_forward_img Carrousel__arrow_forward ${
           currentIndex === images.length - 1 ? "is--Hidden" : ""
         }`}
         onClick={goToNextSlide}
-      >
-        <img
-          src={arrow_forward}
-          alt="flèche suivante"
-          className="Carrousel__arrow_forward_img"
-        />{" "}
-      </button>
+      />{" "}
       <div className="Carrousel__slides">
         {images.map((image, index) => (
           <img

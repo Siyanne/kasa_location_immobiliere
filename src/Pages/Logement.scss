@@ -4,16 +4,14 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  flex-grow: 1;
-  flex-basis: 100%;
-  font-size: 14px;
   font-weight: 500;
+  margin: 27px 0px 7px;
   @media screen and (min-width: 1024px) {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 50px;
-    gap: 50px;
+    //padding: 50px;
+    gap: 30px;
   }
   &__host {
     border-radius: 50%;
@@ -28,12 +26,10 @@
   }
   &__host_info {
     display: flex;
-    justify-content: right;
     justify-content: space-between;
     align-items: center;
     margin: 10px 0px;
     @media screen and (min-width: 1024px) {
-      justify-content: flex-end;
       justify-content: space-between;
       align-items: end;
       flex-direction: column-reverse;
@@ -47,6 +43,11 @@
     align-items: center;
     @media screen and (min-width: 1024px) {
       font-size: 18px;
+    }
+  }
+  &__info_collapse_container {
+    @media screen and (min-width: 1024px) {
+      width: 100%;
     }
   }
   &__tags_info_container {
