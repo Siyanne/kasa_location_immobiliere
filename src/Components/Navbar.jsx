@@ -3,7 +3,7 @@ import "./Navbar.scss";
 import { NavLink } from "react-router-dom";
 
 import logo from "../assets/logo.png";
-const Navbar = () => {
+export default function Navbar() {
   return (
     <nav className="Navbar">
       <img src={logo} alt="logo Kasa" className="Navbar__logo" />
@@ -21,6 +21,4 @@ const Navbar = () => {
       </ul>
     </nav>
   );
-};
-
-export default Navbar;
+}

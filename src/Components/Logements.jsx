@@ -2,7 +2,6 @@ import React from "react";
 import "./Logements.scss";
 import { Link } from "react-router-dom";
 export function Logements({ housingSlice }) {
-  const link = "";
   return (
     <div className="Logements__Home_container">
       <div className="Logements">

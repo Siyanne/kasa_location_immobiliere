@@ -7,6 +7,7 @@ import Rating from "../Components/Rating.jsx";
 import "./Logement.scss";
 import Columns from "../Components/Columns.jsx";
 import Error404 from "./Error404.jsx";
+
 export default function Logement() {
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === id);
@@ -15,9 +16,6 @@ export default function Logement() {
 
   return (
     <>
-      {/*<div>
-        Logement <DevDump val={logement} />{" "}
-  </div>*/}
       <div className="Logement">
         <Carrousel images={logement.pictures} />
 

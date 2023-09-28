@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import "./Collapse.scss";
 import arrow_upward from "../assets/arrow_upward_collapse.png";
+
 function useGetHeight() {
   const contentRef = useRef();
   const [height, setHeight] = useState("0px");
@@ -9,6 +10,7 @@ function useGetHeight() {
   });
   return [contentRef, height];
 }
+
 export default function Collapse({ title, children }) {
   const [contentRef, height] = useGetHeight();
   const [open, setOpen] = useState(false);
