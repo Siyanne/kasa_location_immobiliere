@@ -1,6 +1,5 @@
 import React from "react";
 import logements from "../../data.json";
-import DevDump from "../Components/DevDump.jsx";
 import home_banner from "../assets/home_banner.png";
 import "./Home.scss";
 import Banner from "../Components/Banner.jsx";

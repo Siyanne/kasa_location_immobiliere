@@ -20,19 +20,21 @@
   &__arrow_backward,
   &__arrow_forward {
     position: absolute;
-    top: 50%;
-    border: none;
-    background: rgba(0, 0, 0, 0);
+    top: 45%;
+    @media screen and (min-width: 1024px) {
+      top: 40%;
+    }
   }
   &__arrow_forward {
     right: 0%;
   }
-  &__arrow_backward_img,
-  &__arrow_forward_img {
-    filter: brightness(100%);
-    object-fit: contain;
+
+  &__arrow_backward_icon,
+  &__arrow_forward_icon {
+    font-size: 3em;
+    color: #fff;
     @media screen and (min-width: 1024px) {
-      width: 60px;
+      font-size: 9em;
     }
   }
   .is--Hidden {

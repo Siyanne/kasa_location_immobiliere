@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./Collapse.scss";
-import arrow_upward from "../assets/arrow_upward_collapse.png";
+import arrow_upward from "../../public/arrow_upward_collapse.png";
 
 function useGetHeight() {
   const contentRef = useRef();
