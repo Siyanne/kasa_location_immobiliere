@@ -12,7 +12,6 @@ export default function Logement() {
   const { id } = useParams();
   const logement = logements.find((logement) => logement.id === id);
   if (!logement) return <Error404 />;
-  console.log(logement);
 
   return (
     <>

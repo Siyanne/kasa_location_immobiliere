@@ -44,6 +44,13 @@ export default function Carrousel({ images }) {
           />
         ))}
       </div>
+      <div
+        className={`Carrousel__counter ${
+          images.length === 1 ? "is--Hidden" : ""
+        }`}
+      >
+        {currentIndex + 1}/{images.length}
+      </div>
     </div>
   );
 }

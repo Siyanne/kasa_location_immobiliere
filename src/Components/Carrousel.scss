@@ -1,6 +1,7 @@
 .Carrousel {
   position: relative;
   width: 100%;
+  font-weight: 500;
   &__slide {
     width: 0%;
     transition: width 1s ease;
@@ -40,5 +41,14 @@
   }
   .is--Hidden {
     display: none;
+  }
+  &__counter {
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      bottom: 10px;
+      right: 50%;
+      color: #fff;
+      font-size: 18px;
+    }
   }
 }
