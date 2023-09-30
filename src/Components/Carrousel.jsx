@@ -20,15 +20,15 @@ export default function Carrousel({ images }) {
         icon="fe:arrow-up"
         rotate={3}
         className={`Carrousel__arrow_backward_icon Carrousel__arrow_backward ${
-          currentIndex === 0 ? "is--Hidden" : ""
-        }`}
+          images.length === 1 ? "is--Hidden" : ""
+        } `}
         onClick={goToPrevSlide}
       />{" "}
       <Icon
         icon="fe:arrow-up"
         rotate={1}
         className={`Carrousel__arrow_forward_icon Carrousel__arrow_forward ${
-          currentIndex === images.length - 1 ? "is--Hidden" : ""
+          images.length === 1 ? "is--Hidden" : ""
         }`}
         onClick={goToNextSlide}
       />{" "}
