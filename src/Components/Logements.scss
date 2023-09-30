@@ -43,6 +43,7 @@
       width: 30%;
       flex-grow: 1;
       flex-basis: 1;
+      height: 340px;
     }
   }
 
@@ -51,6 +52,9 @@
     height: 255px;
     object-fit: cover;
     border-radius: 10px;
+    @media screen and (min-width: 1024px) {
+      height: 340px;
+    }
   }
 
   &__Home_title {
