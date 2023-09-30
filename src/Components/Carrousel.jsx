@@ -23,7 +23,7 @@ export default function Carrousel({ images }) {
           images.length === 1 ? "is--Hidden" : ""
         } `}
         onClick={goToPrevSlide}
-      />{" "}
+      />
       <Icon
         icon="fe:arrow-up"
         rotate={1}
@@ -31,7 +31,7 @@ export default function Carrousel({ images }) {
           images.length === 1 ? "is--Hidden" : ""
         }`}
         onClick={goToNextSlide}
-      />{" "}
+      />
       <div className="Carrousel__slides">
         {images.map((image, index) => (
           <img

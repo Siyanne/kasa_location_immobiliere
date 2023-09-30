@@ -6,7 +6,6 @@ import Footer from "./Components/Footer.jsx";
 export default function App() {
   return (
     <div className="App">
-      {/* <DevNavBar />*/}
       <div className="App__general_margin">
         <Navbar />
         <Router />
