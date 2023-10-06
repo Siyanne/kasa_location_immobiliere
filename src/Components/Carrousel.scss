@@ -45,6 +45,7 @@
   &__counter {
     display: none;
     @media screen and (min-width: 1024px) {
+      display: flex;
       position: absolute;
       bottom: 10px;
       right: 50%;
